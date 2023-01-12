@@ -89,7 +89,7 @@ const handleSubmit = async (e) =>
     loader(messageDiv);
 
     //Fetch Data From Server, Bot's Response
-    const response = await fetch('http://localhost:5000', 
+    const response = await fetch('https://optimus-intelligence-software.onrender.com/', 
     {
         method: 'POST',
         headers: 
