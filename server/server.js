@@ -8,7 +8,7 @@ dotenv.config();
 const configuration = new Configuration
 (
     {
-        apiKey: "process.env.OPENAI_API_KEY",
+        apiKey: process.env.OPENAI_API_KEY,
     }
 );
 
@@ -61,4 +61,4 @@ app.post('/', async (req, res) =>
     }
 })
 
-app.listen(5000, () => console.log('Server Is Running On Port http://localhost:5000'));
+app.listen(5000, () => console.log('Server Is Running On Port https://optimus-intelligence-software.onrender.com/'));
